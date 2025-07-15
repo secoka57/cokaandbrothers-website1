@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coka and Brothers Africa Projects - Company Pages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* Sidebar styling */
+        #sidebar {
+            position: fixed;
+            inset-block-start: 70px;
+            inset-inline-start: 20px;
+            inline-size: 220px;
+            max-block-size: 80vh;
+            overflow-y: auto;
+            padding: 1rem;
+            border-inline-end: 1px solid #ddd;
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 8px 12px;
+            margin-block-end: 6px;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        #sidebar a.active,
+        #sidebar a:hover {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Content container with margin-left for sidebar */
+        #content {
+            margin-inline-start: 260px;
+            padding: 2rem 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-inline-size: 992px) {
+            #sidebar {
+                position: static;
+                inline-size: 100%;
+                max-block-size: none;
+                border-inline-end: none;
+                margin-block-end: 2rem;
+            }
+
+            #content {
+                margin-inline-start: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="coka logo.png" alt="Coka Logo" height="40" class="me-2" />
+                Coka and Brothers Africa Projects
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item">
+                        <button id="logoutBtn" class="btn btn-outline-warning ms-3">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" aria-label="Company Page Sections">
+        <h5>Company Pages</h5>
+        <a href="#careers" class="active">Careers</a>
+        <a href="#partners">Partners</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support Center</a>
+        <a href="#community">Community</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#news">News</a>
+        <a href="#blog">Blog</a>
+        <a href="#events">Events</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content" class="container">
+        <section id="careers" class="mb-5">
+            <h2>Careers</h2>
+            <p>Join a fast-growing consulting firm that's making a difference. Explore career opportunities in
+                consulting, compliance, business development, and admin support. Email your CV to <a
+                    href="mailto:hr@cokabrothers.co.za">hr@cokabrothers.co.za</a>.</p>
+        </section>
+
+        <section id="partners" class="mb-5">
+            <h2>Our Partners</h2>
+            <p>We collaborate with law firms, accountants, tax experts, and software developers to deliver seamless
+                services to our clients. Want to partner with us? Email <a
+                    href="mailto:partners@cokabrothers.co.za">partners@cokabrothers.co.za</a>.</p>
+        </section>
+
+        <section id="testimonials" class="mb-5">
+            <h2>Testimonials</h2>
+            <blockquote>“Coka and Brothers helped me register and set up my business smoothly. Highly recommended!” –
+                Thabiso M.</blockquote>
+            <blockquote>“Professional, efficient, and reliable service from start to finish.” – Zanele K.</blockquote>
+        </section>
+
+        <section id="faq" class="mb-5">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li><strong>How long does company registration take?</strong> 1-3 business days depending on CIPC
+                    processing.</li>
+                <li><strong>What documents do I need to submit?</strong> Valid ID, proof of address, and signed forms
+                    depending on service.</li>
+                <li><strong>Do you assist with tax clearance and BEE certificates?</strong> Yes, as part of our
+                    compliance services.</li>
+            </ul>
+        </section>
+
+        <section id="support" class="mb-5">
+            <h2>Support Center</h2>
+            <p>Need help? Visit our <a href="support.html">Support Center</a> or email <a
+                    href="mailto:support@cokabrothers.co.za">support@cokabrothers.co.za</a>. You can also call us
+                Monday–Friday from 9am–5pm.</p>
+        </section>
+
+        <section id="community" class="mb-5">
+            <h2>Community</h2>
+            <p>We give back through workshops, mentorship, and small business funding initiatives in underdeveloped
+                communities. Join our mission!</p>
+        </section>
+
+        <section id="downloads" class="mb-5">
+            <h2>Downloads</h2>
+            <ul>
+                <li><a href="documents/business-plan-template.pdf" download>Business Plan Template</a></li>
+                <li><a href="documents/company-registration-form.pdf" download>Company Registration Form</a></li>
+                <li><a href="documents/compliance-checklist.pdf" download>Compliance Checklist</a></li>
+                <li><a href="documents/marketing-plan-template.pdf" download>Marketing Plan Template</a></li>
+                <li><a href="documents/financial-projections-template.xlsx" download>Financial Projections Template</a>
+                </li>
+                <li><a href="documents/contract-template.docx" download>Contract Template</a></li>
+                <li><a href="documents/partnership-agreement-template.docx" download>Partnership Agreement Template</a>
+                </li>
+                <li><a href="documents/non-disclosure-agreement-template.docx" download>Non-Disclosure Agreement
+                        Template</a></li>
+            </ul>
+        </section>
+
+        <section id="news" class="mb-5">
+            <h2>News</h2>
+            <p>Stay updated with our latest announcements and milestones. Coka and Brothers was recently recognized by
+                the SA Startup Awards for excellence in business support services.</p>
+        </section>
+
+        <section id="blog" class="mb-5">
+            <h2>Blog</h2>
+            <p>Read insights from our team on entrepreneurship, compliance, and digital tools for businesses. <a
+                    href="blog.html">Visit our blog</a>.</p>
+        </section>
+
+        <section id="events" class="mb-5">
+            <h2>Events</h2>
+            <p>Join our webinars and workshops on how to start, grow, and comply as a small business. Upcoming event:
+                <strong>Startup Toolkit Workshop – August 15, 2025</strong>.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // Highlight active link in sidebar based on scroll position
+        const sections = document.querySelectorAll("#content section");
+        const navLinks = document.querySelectorAll("#sidebar a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
